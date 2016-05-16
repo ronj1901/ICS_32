@@ -1,0 +1,2 @@
+import TIME
+TIME.Time()

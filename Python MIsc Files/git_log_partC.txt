@@ -1,0 +1,45 @@
+commit f4b934892b12e2a60b3fd0a80cd1bdf89ea440df
+Author: xiongchiamiov <xiong.chiamiov@gmail.com>
+Date:   Fri Aug 7 14:55:29 2015 -0700
+
+    Timeouts: add css classes to users' userpages
+
+commit 191df009c0ea30920bda115f1ee66ac764574bd4
+Author: xiongchiamiov <xiong.chiamiov@gmail.com>
+Date:   Fri Aug 7 14:53:05 2015 -0700
+
+    Timeouts: add restrictions
+    
+    A user in timeout should not be able to:
+    
+    * vote
+    * comment
+    * submit links or self-posts
+    * report comments or posts
+    * send PMs (other than to /r/reddit.com)
+    * make any mod actions
+    * edit wiki pages
+    
+    and they should get an error when doing so, rather than a silent discard of the
+    action.
+    
+    We'll be disabling these in the UI soon, but we always need to validate in the
+    backend as well.
+
+commit b1a9a51fc9baae479551194b624e0931b530507e
+Author: Matt Lee <matt@reddit.com>
+Date:   Fri Aug 14 15:46:15 2015 -0400
+
+    Timeouts: Add in_timeout to Account defaults.
+
+commit 0bf53195e6541df0d320cd14ff7d98eecc341be3
+Author: Matt Lee <matt@reddit.com>
+Date:   Wed Aug 12 14:44:29 2015 -0400
+
+    Timeouts: Add interstitial for users in timeout.
+
+commit 91e1221d83763088def59b339aff9e70c9abff82
+Author: Brian Simpson <bsimpson63@gmail.com>
+Date:   Thu Nov 12 14:14:33 2015 -0800
+
+    inject_test_data: Make sure promos subreddit exists.
